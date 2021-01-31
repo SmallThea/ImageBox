@@ -19,8 +19,6 @@ def button_handler(func):
             self.button_used = False
     return inner
 
-
-
 class ImageBoxApp(tk.Tk):
     current_image_id = None
     current_image = None
@@ -107,10 +105,3 @@ class ImageBoxApp(tk.Tk):
 
     def reset_error(self):
         self.error_str.set('')
- 
-if __name__ == "__main__":
-    app = ImageBoxApp()
-    app.title("ImageBox")
-    app.geometry("800x600")
-    app.resizable(width=False, height=False)
-    app.mainloop()

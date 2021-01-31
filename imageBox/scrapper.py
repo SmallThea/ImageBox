@@ -1,11 +1,10 @@
 import asyncio
+import aiofiles
+import glob
+import os
 from bs4 import BeautifulSoup
 from random import choice
 from aiohttp import ClientSession
-import aiofiles
-import configparser
-import glob
-import os
 
 ALPHANUM = 'abcdefghijklmnopqrstuvwxyz0123456789'
 IMAGE_ID_LEN = 6
